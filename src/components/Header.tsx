@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
 //
 import logo from "../assets/subtract.svg";
 import backgroundImage from "../assets/background-top.svg";
@@ -28,7 +27,7 @@ const Header = () => {
         />
       </div>
 
-      <div className="absolute w-[125%] bg-[#f1f5f9] rotate-[-5deg] h-52 bottom-[-6rem] border-none outline-none">
+      <div className="absolute w-[125%] bg-[#f1f5f9] rotate-[-5deg] h-52 bottom-[-7rem] border-none outline-none">
         <div className="w-full h-5 relative bg-pink-700 border-[bg-pink-700] outline-none"></div>
       </div>
 
