@@ -14,8 +14,8 @@ const Pricing = () => {
         />
       </div>
 
-      <div className="relative md:mt-64 text-center pb-20 px-4 lg:px-40">
-        <div className="flex flex-col items-center gap-4 justify-center py-7">
+      <div className="relative lg:pt-60 pt-10 md:pt-24 text-center pb-20 px-4 lg:px-40">
+        <div className="flex flex-col items-center gap-4 justify-center pb-7">
           <p className="text-[40px] font-[700] lg:max-w-[660px]">
             Pricing Plans
           </p>
@@ -25,8 +25,8 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-x-16 gap-y-4 py-4">
-          <div className="h-[350px] w-[280px] bg-[#0F1F4B]  flex flex-col px-14 py-3 gap-6 rounded-3xl">
+        <div className="flex flex-col md:flex-row items-center justify-between lg:gap-x-16 md:gap-x-1 gap-y-6 py-4">
+          <div className="h-[350px] lg:w-[280px] bg-[#0F1F4B]  flex flex-col px-14 py-3 gap-6 rounded-3xl">
             <div className="border border-b-[#2A407C] border-t-0 border-r-0 border-l-0 py-5">
               <p className="font-[700] text-[30px]">Starter</p>
               <p className="text-[#8794BA] pt-1">up to 3 users</p>
@@ -42,7 +42,7 @@ const Pricing = () => {
             </button>
           </div>
           {/*  */}
-          <div className="h-[350px] w-[280px] bg-[#ffff]  flex flex-col px-14 py-3 gap-6 rounded-3xl">
+          <div className="h-[350px] lg:w-[280px] bg-[#ffff]  flex flex-col px-14 py-3 gap-6 rounded-3xl">
             <div className="border border-b-[#D3D9E9] border-t-0 border-r-0 border-l-0 py-5">
               <p className="font-[700] text-[30px] text-[#172755]">Standard</p>
               <p className="text-[#8794BA] pt-1">up to 20 users</p>
@@ -58,7 +58,7 @@ const Pricing = () => {
             </button>
           </div>
           {/*  */}
-          <div className="h-[350px] w-[280px] bg-[#0F1F4B]  flex flex-col px-14 py-3 gap-6 rounded-3xl">
+          <div className="h-[350px] lg:w-[280px] bg-[#0F1F4B]  flex flex-col px-14 py-3 gap-6 rounded-3xl">
             <div className="border border-b-[#2A407C] border-t-0 border-r-0 border-l-0 py-5">
               <p className="font-[700] text-[30px]">Premium</p>
               <p className="text-[#8794BA] pt-1">up to 200 users</p>
