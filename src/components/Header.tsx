@@ -10,13 +10,26 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute inset-0 w-full">
+      {/* <div className="absolute inset-0 w-full object-cover">
         <Image
           alt="Mountains"
           src={backgroundImage}
           quality={100}
-          className=""
+          className="h-full w-[120%]"
         />
+      </div> */}
+      <div className="absolute inset-0 w-full object-cover border ">
+        <Image
+          alt="Mountains"
+          src={backgroundImage}
+          width={1200}
+          height={1200}
+          className="w-full h-full scale-[200%]"
+        />
+      </div>
+
+      <div className="absolute w-[125%] bg-[#f1f5f9] rotate-[-5deg] h-52 bottom-[-6rem] border-none outline-none">
+        <div className="w-full h-5 relative bg-pink-700 border-[bg-pink-700] outline-none"></div>
       </div>
 
       {/* nav component */}
@@ -75,7 +88,7 @@ const Header = () => {
           </div>
 
           <div className="relative z-10 h-[500px] flex-1">
-            <div className="absolute right-0 inset-0">
+            <div className="absolute inset-0 right-[-61%]">
               <Image
                 src={mainScreen}
                 alt="main screen content"
