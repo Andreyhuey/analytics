@@ -10,8 +10,13 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute inset-0">
-        <Image alt="Mountains" src={backgroundImage} quality={100} />
+      <div className="absolute inset-0 w-full">
+        <Image
+          alt="Mountains"
+          src={backgroundImage}
+          quality={100}
+          className=""
+        />
       </div>
 
       {/* nav component */}
@@ -52,7 +57,7 @@ const Header = () => {
         </nav>
       </div>
 
-      <div className="relative z-10 py-12 px-4 lg:px-40">
+      <div className="relative z-10  px-4 lg:px-40">
         <div className="flex items-center justify-between">
           <div className="flex flex-1 items-start justify-start flex-col gap-3 lg:max-w-[470px]">
             <h1 className="font-[700] text-[40px] ">
