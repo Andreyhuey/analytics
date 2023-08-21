@@ -22,7 +22,7 @@ const Header = () => {
       {/* nav component */}
       <div className="relative z-10 lg:py-12 md:py-3 px-4 lg:px-40">
         <nav>
-          <div className="lg:flex justify-between hidden lg:flex-row">
+          <div className="lg:flex justify-between hidden">
             <div className="flex justify-between items-center gap-x-16">
               <Link className="flex gap-3 items-center cursor-pointer" href="/">
                 <Image src={logo} alt="Analytics logo" />
@@ -58,8 +58,8 @@ const Header = () => {
       </div>
 
       <div className="relative z-10  px-4 lg:px-40">
-        <div className="flex items-center justify-between">
-          <div className="flex flex-1 items-start justify-start flex-col gap-3 lg:max-w-[470px]">
+        <div className="flex  flex-col md:flex-row items-center justify-between">
+          <div className="flex flex-1 md:items-start items-center justify-center md:justify-start flex-col gap-3 lg:max-w-[470px]">
             <h1 className="font-[700] text-[40px] ">
               Monitor your business on real-time dashboard
             </h1>
@@ -74,7 +74,7 @@ const Header = () => {
             </button>
           </div>
 
-          <div className="relative h-[500px] flex-1 ml-10">
+          <div className="relative z-10 h-[500px] flex-1">
             <div className="absolute right-0 inset-0">
               <Image
                 src={mainScreen}
