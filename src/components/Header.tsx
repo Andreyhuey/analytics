@@ -17,7 +17,7 @@ const Header = () => {
           className="h-full w-[120%]"
         />
       </div> */}
-      <div className="absolute inset-0 w-full object-cover border ">
+      <div className="absolute w-full object-cover border ">
         <Image
           alt="Mountains"
           src={backgroundImage}
@@ -69,9 +69,9 @@ const Header = () => {
         </nav>
       </div>
 
-      <div className="relative z-10  px-4 lg:px-40">
-        <div className="flex  flex-col md:flex-row items-center justify-between">
-          <div className="flex flex-1 md:items-start items-center justify-center md:justify-start flex-col gap-3 lg:max-w-[470px]">
+      <div className="relative z-10  pl-4 lg:pl-40">
+        <div className="flex  flex-col md:flex-row justify-between pt-6">
+          <div className="flex flex-1 pt-20 md:items-start items-center justify-center md:justify-start flex-col gap-3 lg:max-w-[470px]">
             <h1 className="font-[700] text-[40px] ">
               Monitor your business on real-time dashboard
             </h1>
@@ -86,16 +86,16 @@ const Header = () => {
             </button>
           </div>
 
-          <div className="relative z-10 h-[500px] flex-1">
-            <div className="absolute inset-0 right-[-61%]">
-              <Image
-                src={mainScreen}
-                alt="main screen content"
-                layout="fill"
-                objectFit="contain"
-              />
-            </div>
-          </div>
+          {/* <div className="relative z-10 h-[500px] flex-1"> */}
+          {/* <div className="absolute inset-0 right-[-61%]"> */}
+          <Image
+            src={mainScreen}
+            alt="main screen content"
+            // layout="fill"
+            objectFit="contain"
+          />
+          {/* </div> */}
+          {/* </div> */}
         </div>
       </div>
     </div>
