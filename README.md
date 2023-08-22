@@ -1,3 +1,5 @@
+This is the Figma link for the [project](https://www.figma.com/file/K8RIvVtJKHdXIqjpAPe97y/Analytics-%E2%80%94-Landing-Page-Design?type=design&node-id=1-178&mode=design&t=88GzoDQkixGGBzAy-0)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
