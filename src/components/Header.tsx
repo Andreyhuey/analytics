@@ -9,10 +9,10 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div className="relative overflow-hidden bg-[url('../assets/background-top.svg')] bg-no-repeat bg-cover">
-      {/* nav component */}
-      <div className="relative z-10 lg:py-12 md:py-3 px-4 lg:px-40">
+      <div className="relative z-10 lg:py-12 md:py-8 py-4 px-4 lg:px-40">
+        {/* nav component for tabs and pcs */}
         <nav>
-          <div className="lg:flex justify-between hidden">
+          <div className="md:flex justify-between hidden">
             <div className="flex justify-between items-center gap-x-16">
               <Link className="flex gap-3 items-center cursor-pointer" href="/">
                 <Image src={logo} alt="Analytics logo" />
@@ -47,13 +47,13 @@ const Header = () => {
         </nav>
       </div>
 
-      <div className="relative z-10  pl-4 lg:pl-40">
-        <div className="flex  flex-col md:flex-row justify-between pt-6">
-          <div className="flex flex-1 pt-20 md:items-start items-center justify-center md:justify-start flex-col gap-3 lg:max-w-[470px]">
-            <h1 className="font-[700] text-[40px] ">
+      <div className="relative z-10 pl-4 lg:pl-40">
+        <div className="flex flex-col lg:flex-row justify-between gap-3 pt-6">
+          <div className="flex flex-1 pt-20 lg:items-start items-center justify-center lg:justify-start flex-col gap-3 lg:max-w-[470px] pr-4">
+            <h1 className="font-[700] md:text-[40px] text-[30px] text-center lg:text-start md:max-w-[550px] ">
               Monitor your business on real-time dashboard
             </h1>
-            <p className="text-[#8794BA] font-[400]">
+            <p className="text-[#8794BA] font-[400] text-center lg:text-start md:max-w-[550px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
               nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
               vitae nibh nunc mattis imperdiet sed nullam.{" "}
@@ -64,16 +64,12 @@ const Header = () => {
             </button>
           </div>
 
-          {/* <div className="relative z-10 h-[500px] flex-1"> */}
-          {/* <div className="absolute inset-0 right-[-61%]"> */}
           <Image
             src={mainScreen}
             alt="main screen content"
             // layout="fill"
             objectFit="contain"
           />
-          {/* </div> */}
-          {/* </div> */}
         </div>
       </div>
     </div>
