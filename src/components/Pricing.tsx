@@ -1,19 +1,9 @@
-import Image from "next/image";
 import React from "react";
-import backgroundBottom from "../assets/background-bottom.svg";
 import { Footer } from ".";
 
 const Pricing = () => {
   return (
-    <div className="relative overflow-hidden">
-      <div className="absolute inset-0">
-        <Image
-          alt="background bottom image"
-          src={backgroundBottom}
-          quality={100}
-        />
-      </div>
-
+    <div className="relative overflow-hidden bg-[url('../assets/background-bottom.svg')] bg-no-repeat bg-cover">
       <div className="relative lg:pt-60 pt-10 md:pt-24 text-center pb-20 px-4 lg:px-40">
         <div className="flex flex-col items-center gap-4 justify-center pb-7">
           <p className="text-[40px] font-[700] lg:max-w-[660px]">
