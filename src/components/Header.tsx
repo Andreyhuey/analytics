@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden bg-[url('../assets/background-top.svg')] bg-no-repeat bg-cover">
       {/* nav component */}
       <div className="relative z-10 lg:py-12 md:py-3 px-4 lg:px-40">
         <nav>
