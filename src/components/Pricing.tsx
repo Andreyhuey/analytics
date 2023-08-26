@@ -4,7 +4,8 @@ import { Footer } from ".";
 const Pricing = () => {
   return (
     <div className="relative overflow-hidden bg-[url('../assets/background-bottom.svg')] bg-no-repeat bg-cover">
-      <div className="relative lg:pt-60 pt-10 md:pt-24 text-center pb-20 px-4 lg:px-40">
+      <span className=""></span>
+      <div className="relative lg:pt-60 md:pt-44 mt-[34rem] md:mt-0 text-center pb-20 px-4 lg:px-40">
         <div className="flex flex-col items-center gap-4 justify-center pb-7">
           <p className="text-[40px] font-[700] lg:max-w-[660px]">
             Pricing Plans
