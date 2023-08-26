@@ -2,16 +2,17 @@ import React from "react";
 import Image from "next/image";
 //
 import logo from "../assets/subtract.svg";
+import backgroundImage from "../assets/background-top.svg";
 import mainScreen from "../assets/main-screen.svg";
 import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="relative overflow-hidden bg-[url('../assets/background-top.svg')] bg-no-repeat bg-cover">
-      <div className="relative z-10 lg:py-12 md:py-8 px-4 lg:px-40">
-        {/* nav component for pcs */}
+    <div className="relative overflow-hidden">
+      {/* nav component */}
+      <div className="relative z-10 lg:py-12 md:py-3 px-4 lg:px-40">
         <nav>
-          <div className="md:flex justify-between hidden">
+          <div className="lg:flex justify-between hidden">
             <div className="flex justify-between items-center gap-x-16">
               <Link className="flex gap-3 items-center cursor-pointer" href="/">
                 <Image src={logo} alt="Analytics logo" />
@@ -47,12 +48,12 @@ const Header = () => {
       </div>
 
       <div className="relative z-10  pl-4 lg:pl-40">
-        <div className="flex  flex-col lg:flex-row justify-between pt-6">
-          <div className="flex flex-1 pt-20 lg:items-start items-center justify-center lg:justify-start flex-col gap-3 lg:max-w-[470px]">
-            <h1 className="font-[700] md:text-[40px] text-[30px] md:text-center lg:text-start">
+        <div className="flex  flex-col md:flex-row justify-between pt-6">
+          <div className="flex flex-1 pt-20 md:items-start items-center justify-center md:justify-start flex-col gap-3 lg:max-w-[470px]">
+            <h1 className="font-[700] text-[40px] ">
               Monitor your business on real-time dashboard
             </h1>
-            <p className="text-[#8794BA] font-[400] md:text-center lg:text-start">
+            <p className="text-[#8794BA] font-[400]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
               nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
               vitae nibh nunc mattis imperdiet sed nullam.{" "}
