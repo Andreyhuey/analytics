@@ -59,7 +59,7 @@ const Header = () => {
               <h1 className=" font-extrabold text-[18px] ">ANALYTICS</h1>
             </Link>
 
-            {nav ? (
+            {!nav ? (
               <HiOutlineMenuAlt3
                 className="text-white text-[40px]"
                 onClick={handleNav}
@@ -75,12 +75,12 @@ const Header = () => {
 
         <div
           className={` ${
-            !nav
+            nav === true
               ? "ease-in duration-300 transition"
               : "ease-out duration-300 transition"
           } `}
         >
-          {!nav ? (
+          {nav === true ? (
             <ul className="text-[#8794BA] font-[500] text-[16px] gap-y-8 pl-[50px] pt-6 flex flex-col items-start ">
               <li>
                 <Link href="/">Products</Link>
