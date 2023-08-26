@@ -2,39 +2,16 @@ import React from "react";
 import Image from "next/image";
 //
 import logo from "../assets/subtract.svg";
-import backgroundImage from "../assets/background-top.svg";
 import mainScreen from "../assets/main-screen.svg";
 import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="relative overflow-hidden">
-      {/* <div className="absolute inset-0 w-full object-cover">
-        <Image
-          alt="Mountains"
-          src={backgroundImage}
-          quality={100}
-          className="h-full w-[120%]"
-        />
-      </div> */}
-      <div className="absolute w-full object-cover border ">
-        <Image
-          alt="Mountains"
-          src={backgroundImage}
-          width={1200}
-          height={1200}
-          className="w-full h-full scale-[200%]"
-        />
-      </div>
-
-      <div className="absolute w-[125%] bg-[#f1f5f9] rotate-[-5deg] h-52 bottom-[-7rem] border-none outline-none">
-        <div className="w-full h-5 relative bg-pink-700 border-[bg-pink-700] outline-none"></div>
-      </div>
-
-      {/* nav component */}
-      <div className="relative z-10 lg:py-12 md:py-3 px-4 lg:px-40">
+    <div className="relative overflow-hidden bg-[url('../assets/background-top.svg')] bg-no-repeat bg-cover">
+      <div className="relative z-10 lg:py-12 md:py-8 px-4 lg:px-40">
+        {/* nav component for pcs */}
         <nav>
-          <div className="lg:flex justify-between hidden">
+          <div className="md:flex justify-between hidden">
             <div className="flex justify-between items-center gap-x-16">
               <Link className="flex gap-3 items-center cursor-pointer" href="/">
                 <Image src={logo} alt="Analytics logo" />
@@ -70,12 +47,12 @@ const Header = () => {
       </div>
 
       <div className="relative z-10  pl-4 lg:pl-40">
-        <div className="flex  flex-col md:flex-row justify-between pt-6">
-          <div className="flex flex-1 pt-20 md:items-start items-center justify-center md:justify-start flex-col gap-3 lg:max-w-[470px]">
-            <h1 className="font-[700] text-[40px] ">
+        <div className="flex  flex-col lg:flex-row justify-between pt-6">
+          <div className="flex flex-1 pt-20 lg:items-start items-center justify-center lg:justify-start flex-col gap-3 lg:max-w-[470px]">
+            <h1 className="font-[700] md:text-[40px] text-[30px] md:text-center lg:text-start">
               Monitor your business on real-time dashboard
             </h1>
-            <p className="text-[#8794BA] font-[400]">
+            <p className="text-[#8794BA] font-[400] md:text-center lg:text-start">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
               nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
               vitae nibh nunc mattis imperdiet sed nullam.{" "}
